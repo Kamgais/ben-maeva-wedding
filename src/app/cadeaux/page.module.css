@@ -1,0 +1,268 @@
+.cadeauxPage {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--color-charcoal);
+  font-weight: 400;
+}
+
+/* Message */
+.messageSection {
+  background: var(--color-white);
+}
+
+.messageCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.messageIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.messageTitle {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-rose);
+  margin-bottom: 1.5rem;
+}
+
+.messageText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+/* Ideas */
+.ideasSection {
+  background: var(--color-ivory);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-rose);
+  margin-bottom: var(--spacing-lg);
+}
+
+.ideasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ideaCard {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.ideaCard:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ideaIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.ideaTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.ideaDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+/* Cagnotte */
+.cagnotteSection {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-eucalyptus) 0%, var(--color-sage) 100%);
+}
+
+.cagnotteCard {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.cagnotteTitle {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-rose);
+  margin-bottom: 1.5rem;
+}
+
+.cagnotteText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.cagnotteButton {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background: linear-gradient(135deg, var(--color-rose), var(--color-gold));
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.cagnotteButton:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Stores */
+.storesSection {
+  background: var(--color-white);
+}
+
+.storesSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.8;
+}
+
+.storesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.storeCard {
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.storeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.storeIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.storeName {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-rose);
+  margin-bottom: 0.75rem;
+}
+
+.storeLink {
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  font-weight: 500;
+}
+
+/* Thank You */
+.thankYouSection {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-ivory);
+}
+
+.thankYouCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.thankYouTitle {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-rose);
+  margin-bottom: 1.5rem;
+}
+
+.thankYouText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.rsvpLink {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--color-eucalyptus);
+  color: var(--color-white);
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all var(--transition-base);
+}
+
+.rsvpLink:hover {
+  background: var(--color-sage);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .messageCard,
+  .cagnotteCard,
+  .thankYouCard {
+    padding: var(--spacing-md);
+  }
+
+  .ideasGrid,
+  .storesGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,312 @@
+.rsvpPage {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--color-charcoal);
+  font-weight: 400;
+}
+
+/* Form */
+.formSection {
+  background: var(--color-white);
+}
+
+.formContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form {
+  background: var(--color-ivory);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+.formGroup {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-blush);
+}
+
+.formGroup:last-of-type {
+  border-bottom: none;
+}
+
+.formSectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  margin-bottom: var(--spacing-md);
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-charcoal);
+  font-size: 1rem;
+}
+
+.input,
+.select,
+.textarea {
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--color-blush);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--color-white);
+  transition: all var(--transition-base);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-rose);
+  box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.2);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, var(--color-rose), var(--color-gold));
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  margin-top: var(--spacing-md);
+}
+
+.submitButton:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Thank You */
+.thankYouSection {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+}
+
+.thankYouCard {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.thankYouIcon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.thankYouTitle {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-rose);
+  margin-bottom: 1.5rem;
+}
+
+.thankYouText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.backButton {
+  margin-top: var(--spacing-md);
+  padding: 1rem 2rem;
+  background: var(--color-eucalyptus);
+  color: var(--color-white);
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all var(--transition-base);
+}
+
+.backButton:hover {
+  background: var(--color-sage);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .formContainer {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .pageSubtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .formSection {
+    padding: var(--spacing-md) 0;
+  }
+
+  .form {
+    padding: var(--spacing-md);
+    border-radius: 15px;
+  }
+
+  .formGroup {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .formSectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .inputRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .inputGroup {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .label {
+    font-size: 0.95rem;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .textarea {
+    min-height: 100px;
+  }
+
+  .submitButton {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    margin-top: var(--spacing-sm);
+  }
+
+  .thankYouSection {
+    min-height: 70vh;
+    padding: var(--spacing-md);
+  }
+
+  .thankYouCard {
+    padding: var(--spacing-md);
+    border-radius: 20px;
+  }
+
+  .thankYouIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .thankYouTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .thankYouText {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .backButton {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1rem;
+  }
+
+  .formSectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .input,
+  .select,
+  .textarea {
+    padding: 0.625rem;
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .thankYouCard {
+    padding: 1rem;
+  }
+
+  .thankYouIcon {
+    font-size: 3.5rem;
+  }
+
+  .thankYouTitle {
+    font-size: 1.8rem;
+  }
+
+  .thankYouText {
+    font-size: 1rem;
+  }
+}

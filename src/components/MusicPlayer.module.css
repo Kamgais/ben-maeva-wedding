@@ -1,0 +1,120 @@
+.musicPlayer {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+}
+
+.musicPlayer:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.playButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-rose), var(--color-gold));
+  color: var(--color-white);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
+
+.volumeControl {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.musicPlayer:hover .volumeControl {
+  opacity: 1;
+  max-width: 150px;
+}
+
+.volumeIcon {
+  font-size: 1.2rem;
+}
+
+.volumeSlider {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-blush);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-rose);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.volumeSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: var(--color-gold);
+}
+
+.volumeSlider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-rose);
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition-fast);
+}
+
+.volumeSlider::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  background: var(--color-gold);
+}
+
+@media (max-width: 768px) {
+  .musicPlayer {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .playButton {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .volumeControl {
+    display: none;
+  }
+}

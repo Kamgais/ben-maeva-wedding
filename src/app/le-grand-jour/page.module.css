@@ -1,0 +1,358 @@
+.grandJourPage {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--color-charcoal);
+  font-weight: 400;
+}
+
+/* Programme */
+.programmeSection {
+  background: var(--color-white);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-rose);
+  margin-bottom: var(--spacing-lg);
+}
+
+.programmeTimeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.programmeItem {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-blush);
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.programmeItem:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-md);
+}
+
+.programmeIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.programmeTime {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.programmeContent {
+  flex: 1;
+}
+
+.programmeTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-rose);
+  margin-bottom: 0.5rem;
+}
+
+.programmeDescription {
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  line-height: 1.6;
+}
+
+/* Map */
+.mapSection {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-ivory);
+}
+
+.mapContainer {
+  margin: var(--spacing-lg) 0;
+  box-shadow: var(--shadow-lg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.address {
+  text-align: center;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-white);
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+}
+
+.addressTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  margin-bottom: 0.75rem;
+}
+
+.addressText {
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.directionsButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, var(--color-rose), var(--color-gold));
+  color: var(--color-white);
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.directionsButton:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Infos */
+.infosSection {
+  background: var(--color-white);
+}
+
+.infosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.infoCard {
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.infoIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.infoTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-rose);
+  margin-bottom: 0.75rem;
+}
+
+.infoDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+}
+
+/* Weather */
+.weatherSection {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-eucalyptus) 0%, var(--color-sage) 100%);
+}
+
+.weatherCard {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.weatherTitle {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.weatherText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .programmeTimeline {
+    max-width: 700px;
+  }
+
+  .infosGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .pageSubtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .programmeSection,
+  .mapSection,
+  .infosSection,
+  .weatherSection {
+    padding: var(--spacing-md) 0;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .programmeItem {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+
+  .programmeIcon {
+    font-size: 2rem;
+  }
+
+  .programmeTime {
+    min-width: auto;
+    font-size: 1.5rem;
+  }
+
+  .programmeTitle {
+    font-size: 1.3rem;
+  }
+
+  .programmeDescription {
+    font-size: 0.95rem;
+  }
+
+  .mapContainer {
+    margin: var(--spacing-md) 0;
+  }
+
+  .mapContainer iframe {
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .address {
+    padding: var(--spacing-sm);
+  }
+
+  .addressTitle {
+    font-size: 1.5rem;
+  }
+
+  .addressText {
+    font-size: 1rem;
+  }
+
+  .directionsButton {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .infosGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .infoCard {
+    padding: var(--spacing-md);
+  }
+
+  .infoIcon {
+    font-size: 2.5rem;
+  }
+
+  .infoTitle {
+    font-size: 1.3rem;
+  }
+
+  .infoDescription {
+    font-size: 0.95rem;
+  }
+
+  .weatherCard {
+    padding: var(--spacing-md);
+  }
+
+  .weatherTitle {
+    font-size: 1.8rem;
+  }
+
+  .weatherText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .programmeItem {
+    padding: 1rem;
+  }
+
+  .programmeTime {
+    font-size: 1.3rem;
+  }
+
+  .programmeTitle {
+    font-size: 1.2rem;
+  }
+
+  .mapContainer iframe {
+    height: 250px;
+  }
+
+  .directionsButton {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .infoCard {
+    padding: 1rem;
+  }
+
+  .weatherCard {
+    padding: 1rem;
+  }
+}

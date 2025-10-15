@@ -1,0 +1,349 @@
+.histoirePage {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--color-charcoal);
+  font-weight: 300;
+}
+
+/* Timeline */
+.timelineSection {
+  background: var(--color-white);
+  padding: var(--spacing-xl) 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--spacing-md) 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-rose), var(--color-gold));
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: var(--spacing-xl);
+  width: 100%;
+}
+
+.timelineContent {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.timelineItem.left .timelineContent {
+  flex-direction: row;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: calc(50% + var(--spacing-lg));
+}
+
+.timelineItem.right .timelineContent {
+  flex-direction: row-reverse;
+  text-align: left;
+  justify-content: flex-start;
+  padding-left: calc(50% + var(--spacing-lg));
+}
+
+.timelineItem::after {
+  content: '❤️';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: var(--color-white);
+  border: 3px solid var(--color-rose);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 2;
+  box-shadow: var(--shadow-md);
+}
+
+.timelineImage {
+  flex-shrink: 0;
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.timelineImage:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.timelineText {
+  flex: 1;
+}
+
+.timelineYear {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.timelineTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  margin-bottom: 0.75rem;
+}
+
+.timelineDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+/* Quotes */
+.quotesSection {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-eucalyptus) 0%, var(--color-sage) 100%);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.quotesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quoteCard {
+  background: rgba(255, 255, 255, 0.95);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.quoteCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.quoteText {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-charcoal);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.quoteAuthor {
+  font-size: 1rem;
+  color: var(--color-rose);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Gallery Preview */
+.galleryPreview {
+  background: var(--color-ivory);
+}
+
+.galleryPreview .sectionTitle {
+  color: var(--color-rose);
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.photoItem {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.photoItem:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .timeline::before {
+    left: 40px;
+  }
+
+  .timelineItem.left .timelineContent,
+  .timelineItem.right .timelineContent {
+    padding-left: 80px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timelineItem::after {
+    left: 40px;
+  }
+
+  .timelineImage {
+    width: 200px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .pageSubtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timelineSection {
+    padding: var(--spacing-md) 0;
+  }
+
+  .timelineItem {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .timelineItem.left .timelineContent,
+  .timelineItem.right .timelineContent {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: var(--spacing-sm);
+  }
+
+  .timelineItem::after {
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    border-width: 2px;
+  }
+
+  .timelineImage {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .timelineYear {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .timelineTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timelineDescription {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .quotesGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .quoteCard {
+    padding: var(--spacing-md);
+  }
+
+  .quoteText {
+    font-size: 1.3rem;
+  }
+
+  .photoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .timelineItem.left .timelineContent,
+  .timelineItem.right .timelineContent {
+    padding-left: 45px;
+    padding-right: 0.5rem;
+  }
+
+  .timelineImage {
+    height: 180px;
+  }
+
+  .timelineYear {
+    font-size: 1.3rem;
+  }
+
+  .timelineTitle {
+    font-size: 1.3rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.95rem;
+  }
+
+  .quoteText {
+    font-size: 1.2rem;
+  }
+
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+}

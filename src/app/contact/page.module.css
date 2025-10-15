@@ -1,0 +1,255 @@
+.contactPage {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-ivory) 100%);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-rose);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--color-charcoal);
+  font-weight: 400;
+}
+
+/* FAQ */
+.faqSection {
+  background: var(--color-white);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-rose);
+  margin-bottom: var(--spacing-lg);
+}
+
+.faqContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: var(--color-ivory);
+  margin-bottom: var(--spacing-md);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.faqItem:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  transition: all var(--transition-base);
+}
+
+.faqQuestion:hover {
+  background: var(--color-blush);
+}
+
+.questionText {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-charcoal);
+  font-weight: 500;
+  flex: 1;
+}
+
+.faqIcon {
+  font-size: 2rem;
+  color: var(--color-rose);
+  font-weight: 300;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.faqAnswer {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  animation: slideDown 0.3s ease;
+}
+
+.faqAnswer p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact */
+.contactSection {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-ivory);
+}
+
+.contactSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.8;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contactCard {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.contactCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.contactIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactName {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  margin-bottom: 0.5rem;
+}
+
+.contactRole {
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactLink {
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  transition: all var(--transition-base);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.contactLink:hover {
+  background: var(--color-blush);
+  color: var(--color-rose);
+}
+
+/* Emergency */
+.emergencySection {
+  background: linear-gradient(135deg, var(--color-eucalyptus) 0%, var(--color-sage) 100%);
+}
+
+.emergencyCard {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.emergencyTitle {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-rose);
+  margin-bottom: 1.5rem;
+}
+
+.emergencyText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.emergencyContact {
+  padding: var(--spacing-md);
+  background: var(--color-blush);
+  border-radius: 15px;
+  margin-top: var(--spacing-md);
+}
+
+.emergencyName {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-rose);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.emergencyPhone {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  padding: 0.75rem 1.5rem;
+  background: var(--color-white);
+  border-radius: 50px;
+  transition: all var(--transition-base);
+}
+
+.emergencyPhone:hover {
+  background: var(--color-rose);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .emergencyCard {
+    padding: var(--spacing-md);
+  }
+
+  .questionText {
+    font-size: 1.1rem;
+  }
+}

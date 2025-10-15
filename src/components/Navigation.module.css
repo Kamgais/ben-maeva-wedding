@@ -1,0 +1,149 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  padding: 1rem 0;
+}
+
+.nav.scrolled {
+  box-shadow: var(--shadow-sm);
+  padding: 0.5rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-rose);
+  transition: all var(--transition-base);
+}
+
+.logo:hover {
+  color: var(--color-gold);
+  transform: scale(1.05);
+}
+
+.logoText {
+  display: inline-block;
+}
+
+.navList {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-charcoal);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-rose);
+  transition: width var(--transition-base);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink:hover {
+  color: var(--color-rose);
+}
+
+/* Mobile */
+.mobileToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  width: 25px;
+  height: 2px;
+  background: var(--color-charcoal);
+  transition: all var(--transition-base);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-ivory);
+  box-shadow: var(--shadow-md);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileNavList {
+  list-style: none;
+  padding: var(--spacing-md);
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-blush);
+  transition: all var(--transition-base);
+}
+
+.mobileNavLink:hover {
+  color: var(--color-rose);
+  padding-left: 1.5rem;
+  background: var(--color-blush);
+}
+
+@media (max-width: 968px) {
+  .navList {
+    display: none;
+  }
+  
+  .mobileToggle {
+    display: flex;
+  }
+}
