@@ -173,7 +173,7 @@ export default function RSVP() {
                   <>
                     <div className={styles.inputGroup}>
                       <label htmlFor="accompagnants" className={styles.label}>
-                        Nombre d'accompagnants
+                        Nombre d&apos;accompagnants
                       </label>
                       <select
                         id="accompagnants"

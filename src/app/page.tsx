@@ -91,7 +91,7 @@ export default function Home() {
               <span className={styles.cardIcon}>📅</span>
               <h3 className={styles.cardTitle}>Le Grand Jour</h3>
               <p className={styles.cardDescription}>
-                Programme, horaires et plan d'accès
+                Programme, horaires et plan d&apos;accès
               </p>
             </Link>
 

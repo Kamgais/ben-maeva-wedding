@@ -130,7 +130,7 @@ export default function Contact() {
             Nous contacter
           </h2>
           <p className={styles.contactSubtitle}>
-            Une question ? N'hésitez pas à nous contacter directement
+            Une question ? N&apos;hésitez pas à nous contacter directement
           </p>
           <div className={styles.contactGrid}>
             {contacts.map((contact, index) => (
