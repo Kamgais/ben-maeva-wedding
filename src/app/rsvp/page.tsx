@@ -225,7 +225,7 @@ export default function RSVP() {
 
                     <div className={styles.inputGroup}>
                       <label htmlFor="hebergement" className={styles.label}>
-                        Souhaitez-vous réserver une chambre à l'hôtel partenaire ?
+                        Souhaitez-vous réserver une chambre à l&apos;hôtel partenaire ?
                       </label>
                       <select
                         id="hebergement"

@@ -21,7 +21,7 @@ export default function Contact() {
     },
     {
       question: 'Y a-t-il un hébergement à proximité ?',
-      answer: 'Oui ! L\'Hôtel Le Jardin est situé à 5 minutes du château. Nous avons négocié un tarif préférentiel. Utilisez le code "BENMAEVA" lors de votre réservation avant le 1er juin.',
+            answer: "Oui, nous avons réservé des chambres dans plusieurs hôtels à proximité. Consultez l&apos;onglet &apos;Le Grand Jour&apos; pour plus d&apos;informations sur les hébergements.",
     },
     {
       question: 'Comment se rendre au château ?',

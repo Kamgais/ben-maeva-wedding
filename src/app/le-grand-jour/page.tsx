@@ -104,7 +104,7 @@ export default function LeGrandJour() {
       <section className={styles.mapSection}>
         <div className="container">
           <h2 className={`${styles.sectionTitle} floral-accent`}>
-            Plan d'accès
+            Plan d&apos;accès
           </h2>
           <div className={styles.mapContainer}>
             <iframe
@@ -127,7 +127,7 @@ export default function LeGrandJour() {
               rel="noopener noreferrer"
               className={styles.directionsButton}
             >
-              Obtenir l'itinéraire →
+              Obtenir l&apos;itinéraire →
             </a>
           </div>
         </div>
@@ -158,8 +158,8 @@ export default function LeGrandJour() {
             <h3 className={styles.weatherTitle}>☀️ Météo en août</h3>
             <p className={styles.weatherText}>
               Températures agréables prévues : 25-28°C. Nous vous recommandons 
-              d'apporter une petite veste pour la soirée. En cas de pluie, 
-              la cérémonie aura lieu dans l'orangerie couverte.
+              d&apos;apporter une petite veste pour la soirée. En cas de pluie, 
+              la cérémonie aura lieu dans l&apos;orangerie couverte.
             </p>
           </div>
         </div>

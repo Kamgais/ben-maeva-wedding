@@ -53,7 +53,7 @@ export default function Cadeaux() {
               permettront de démarrer notre vie à deux dans les meilleures conditions.
             </p>
             <p className={styles.messageText}>
-              Nous rêvons notamment d'un voyage de noces au Japon, et toute 
+              Nous rêvons notamment d&apos;un voyage de noces au Japon, et toute 
               contribution à ce projet nous rendrait infiniment heureux ! 🌸
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function Cadeaux() {
               à concrétiser nos rêves et à bien démarrer notre nouvelle vie ensemble.
             </p>
             <Link href="/rsvp" className={styles.rsvpLink}>
-              N'oubliez pas de confirmer votre présence →
+              N&apos;oubliez pas de confirmer votre présence →
             </Link>
           </div>
         </div>

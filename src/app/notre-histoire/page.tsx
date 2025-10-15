@@ -52,10 +52,10 @@ export default function NotreHistoire() {
       <section className={styles.hero}>
         <div className="container">
           <h1 className={`${styles.pageTitle} floral-accent fade-in`}>
-            Notre Histoire d'Amour
+            Notre Histoire d&apos;Amour
           </h1>
           <p className={`${styles.pageSubtitle} fade-in`} style={{ animationDelay: '0.3s' }}>
-            Le début d'un conte de fées moderne
+            Le début d&apos;un conte de fées moderne
           </p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function NotreHistoire() {
           <div className={styles.quotesGrid}>
             {quotes.map((quote, index) => (
               <blockquote key={index} className={styles.quoteCard}>
-                <p className={styles.quoteText}>"{quote.text}"</p>
+                <p className={styles.quoteText}>&ldquo;{quote.text}&rdquo;</p>
                 <cite className={styles.quoteAuthor}>— {quote.author}</cite>
               </blockquote>
             ))}

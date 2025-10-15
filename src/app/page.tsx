@@ -126,11 +126,10 @@ export default function Home() {
       <section className={styles.quoteSection}>
         <div className="container">
           <blockquote className={styles.quote}>
-            <p className={styles.quoteText}>
-              "L'amour ne consiste pas à se regarder l'un l'autre, 
-              mais à regarder ensemble dans la même direction."
-            </p>
-            <cite className={styles.quoteAuthor}>— Antoine de Saint-Exupéry</cite>
+                      <p className={styles.quoteText}>
+            &ldquo;L&apos;amour n&apos;est pas seulement un sentiment, c&apos;est un art, et comme tout art, il demande non seulement de l&apos;inspiration, mais aussi beaucoup de technique&rdquo;
+          </p>
+          <p className={styles.quoteAuthor}>— Erich Fromm</p>
           </blockquote>
         </div>
       </section>

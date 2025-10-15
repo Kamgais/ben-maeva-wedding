@@ -113,10 +113,10 @@ export default function Galerie() {
           <div className={styles.downloadCard}>
             <h2 className={styles.downloadTitle}>💾 Télécharger toutes les photos</h2>
             <p className={styles.downloadText}>
-              Vous pouvez télécharger l'album complet en haute résolution
+              Vous pouvez télécharger l&apos;album complet en haute résolution
             </p>
             <button className={styles.downloadButton}>
-              Télécharger l'album complet (ZIP)
+              Télécharger l&apos;album complet (ZIP)
             </button>
           </div>
         </div>
